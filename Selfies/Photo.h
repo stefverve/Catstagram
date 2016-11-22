@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Photo.h
 //  Selfies
 //
 //  Created by Stefan Verveniotis on 2016-11-21.
@@ -7,13 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Photo.h"
 
+@interface Photo : NSObject
 
-@interface ViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
-
-
-
+@property (nonatomic) UIImage * photo;
+@property (nonatomic) NSString * label;
 
 @end
-
